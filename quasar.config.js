@@ -47,9 +47,8 @@ export default defineConfig((/* ctx */) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // Para GitHub Pages: reemplaza 'nombre-repo' con el nombre exacto de tu repositorio
-      // Ejemplo: si la URL es https://usuario.github.io/quasar-simulador/, usa '/quasar-simulador/'
-      publicPath: process.env.GITHUB_PAGES === 'true' ? '/quasar-simulador-productividad/' : './',
+      // GitHub Pages: this can be set by CI as '/repo-name/' (or '/' for user pages)
+      publicPath: process.env.PUBLIC_PATH || './',
       // analyze: true,
       // env: {},
       // rawDefine: {}
