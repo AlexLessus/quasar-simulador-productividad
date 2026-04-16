@@ -1,1 +1,30 @@
 // app global css
+
+body {
+	background:
+		radial-gradient(circle at 20% 20%, rgba(0, 229, 255, 0.14), transparent 42%),
+		radial-gradient(circle at 80% 0%, rgba(0, 255, 178, 0.13), transparent 35%),
+		#050b14;
+	color: #e2e8f0;
+}
+
+.glass-card {
+	background: linear-gradient(145deg, rgba(15, 23, 42, 0.78), rgba(30, 41, 59, 0.58));
+	border: 1px solid rgba(56, 189, 248, 0.16);
+	backdrop-filter: blur(10px);
+	border-radius: 16px;
+	transition: all 0.35s ease;
+}
+
+.glass-card:hover {
+	border-color: rgba(0, 229, 255, 0.45);
+	box-shadow: 0 8px 26px rgba(0, 229, 255, 0.12);
+}
+
+.q-btn {
+	transition: transform 0.2s ease;
+}
+
+.q-btn:hover {
+	transform: translateY(-1px);
+}
